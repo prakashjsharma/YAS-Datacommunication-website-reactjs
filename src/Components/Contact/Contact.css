@@ -1,0 +1,151 @@
+.ContactSection {
+  position: relative;
+  padding: 0.5em 0;
+  width: 100%;
+  height: calc(100vh - 40vh);
+  background-color: var(--black);
+}
+
+.containerContact {
+  height: 100%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.ContactSectionHolder {
+  display: flex;
+  margin-top: 3em;
+}
+
+.contactFormControlSection {
+  width: 50%;
+  height: fit-content;
+  /* background-color: var(--transparent-color); */
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactMapSection {
+  width: 50%;
+  height: 100%;
+  /* background-color: var(--transparent-color); */
+}
+
+.ContactTypeBox {
+  display: flex;
+  align-items: center;
+  padding: 2em 0;
+}
+
+label.lblTypeName {
+  font-size: 2em;
+  margin-left: 2em;
+  color: var(--white);
+  font-family: var(--heading-font);
+}
+.svg-inline--fa.contactTypeIcon {
+  height: 3em;
+  color: var(--one-diff-color);
+  padding: 1em;
+  border-radius: 3rem;
+  background-color: var(--transparent-color);
+  box-shadow: 0px 0px 15px 0px var(--one-diff-color);
+}
+
+.contactHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lblContactHeader {
+  color: var(--two-diff-color);
+  font-family: var(--heading-font);
+  font-size: 4em;
+}
+
+.contact-form-control {
+  width: 100%;
+  font-weight: normal;
+  font-size: 1em;
+  color: #333333;
+  background-color: transparent;
+  height: 3em;
+  border: 1px solid transparent;
+  border-bottom: 1px solid var(--fifth-diff-color);
+  border-radius: 0;
+  box-shadow: none;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.InputBoxHolder {
+  margin: 2em 4em 0;
+}
+.contact-form-control:focus {
+  border-bottom: 1px solid var(--dark-theme);
+  outline: none;
+}
+
+input.btnSubmitDetails {
+  width: 100%;
+  height: 3em;
+  background-color: var(--dark-theme);
+  color: var(--white);
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1440px) {
+  .lblContactHeader {
+    font-size: 3.5em;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .ContactSectionHolder {
+    display: grid;
+  }
+  .contactFormControlSection {
+    width: 100%;
+  }
+
+  .contactMapSection {
+    width: 100%;
+  }
+  .ContactSection {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .lblContactHeader {
+    font-size: 2em;
+  }
+
+  label.lblTypeName {
+    font-size: 1.5em;
+  }
+
+  .svg-inline--fa.contactTypeIcon {
+    height: 2em;
+  }
+  .InputBoxHolder {
+    margin: 2em 0em 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .svg-inline--fa.contactTypeIcon {
+    height: 1em;
+  }
+
+  label.lblTypeName {
+    margin-left: 1em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  label.lblTypeName {
+    font-size: 1.2em;
+  }
+}

@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "fontOswald";
+  src: url("../src/Assets/Fonts/Oswald/Oswald-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "fontTeko-Bold";
+  src: url("../src/Assets/Fonts/Teko/Teko-Bold.ttf");
+}
+
+:root {
+  /* colors */
+  --dark-theme: #4c380b;
+  --light-theme: #96762c;
+  --one-diff-color: #c8771e;
+  --two-diff-color: #fff6d7;
+  --third-diff-color: #f8d9a1;
+  --fourth-diff-color: #ebebeb;
+  --fifth-diff-color: #2d2e2c;
+  --sixth-diff-color: #3e3e3e;
+  --white: white;
+  --black: black;
+  --transparent-color: #ebebeb40;
+
+  /* Font */
+  --heading-font: "fontOswald";
+}
+
+* {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+::selection {
+  color: var(--white);
+  background: var(--dark-theme);
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--one-diff-color);
+  border-radius: 0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--fifth-diff-color);
+}
+
+/* .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1646px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+} */

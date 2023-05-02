@@ -1,0 +1,134 @@
+.ClientsSection {
+  position: relative;
+  padding: 0.5em 0;
+  width: 100%;
+  height: calc(100vh - 0vh);
+  background-color: var(--white);
+}
+
+.ClientsContainer {
+  height: 100%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.ClientsHeader {
+  text-align: center;
+  padding: 3em;
+}
+
+label.lblClientsHeader {
+  font-size: 4em;
+  font-family: var(--heading-font);
+  font-weight: bold;
+}
+
+.ClientsHeaderPara {
+  text-align: center;
+  padding: 2em;
+}
+
+label.lblClientsHeaderPara {
+  font-size: 3em;
+  font-family: var(--heading-font);
+  font-weight: bold;
+}
+
+.ClientsSectionBody {
+  height: 70%;
+}
+
+.ClientsClone {
+  display: grid;
+  /* flex-direction: row; */
+  /* justify-content: flex-start; */
+  row-gap: 1em;
+  column-gap: 1em;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ClientsBox {
+  background-color: var(--fourth-diff-color);
+  padding: 1em;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease 0s;
+}
+
+.ClientsBox:hover {
+  background-color: var(--dark-theme);
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.ClientsIconBox {
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+}
+
+img.ClientsFigure {
+  width: 30em;
+  height: 13em;
+}
+
+@media only screen and (max-width: 1024px) {
+  .ClientsSection {
+    height: 100%;
+    padding-bottom: 3em;
+  }
+
+  .ClientsHeader {
+    padding: 3em 3em 0;
+  }
+  img.ClientsFigure {
+    width: 23em;
+    height: 11em;
+  }
+
+  label.lblClientsHeaderPara {
+    font-size: 2em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  img.ClientsFigure {
+    width: 16em;
+    height: 7em;
+  }
+
+  label.lblClientsHeaderPara {
+    font-size: 1.5em;
+  }
+
+  .ClientsHeaderPara {
+    padding: 0 2em 2em 2em;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .ClientsClone {
+    grid-template-columns: 1fr;
+  }
+  .ClientsHeader {
+    padding: 3em 3em 1em;
+  }
+  label.lblClientsHeader {
+    font-size: 2em;
+  }
+
+  label.lblClientsHeaderPara {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 375px) {
+  label.lblClientsHeaderPara {
+    font-size: 0.8em;
+  }
+
+  .ClientsHeader {
+    padding: 3em 2em 1em;
+  }
+
+  img.ClientsFigure {
+    width: 14em;
+    height: 7em;
+  }
+}

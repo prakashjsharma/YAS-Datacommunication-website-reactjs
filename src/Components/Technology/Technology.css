@@ -1,0 +1,136 @@
+.TechnologySection {
+  position: relative;
+  padding: 0.5em 0;
+  width: 100%;
+  height: calc(100vh - 1vh);
+  background-color: var(--fifth-diff-color);
+  /* background-image: url(../../Assets/Images/bg4.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.containerTechnology {
+  height: 100%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.technologyHeader {
+  width: 100%;
+  text-align: center;
+  padding: 2em 0 1em 0;
+}
+
+.technologyHeader .lblTechnologyHeader {
+  color: var(--two-diff-color);
+  font-size: 4em;
+  font-family: var(--heading-font);
+  font-weight: bold;
+}
+
+.Technology-header-para {
+  width: 100%;
+  text-align: center;
+  padding: 2em 0 4em 0;
+}
+
+.Technology-header-para .lblTechnologyHeaderPara {
+  color: var(--light-theme);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.technology-body {
+  width: 100%;
+}
+
+.technologyClone {
+  display: grid;
+  /* flex-direction: row; */
+  /* justify-content: flex-start; */
+  row-gap: 1em;
+  column-gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.technologyBox {
+  background-color: var(--black);
+  padding: 1em;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+}
+
+.technologyBox:hover {
+  background-color: var(--two-diff-color);
+  transform: translateY(-10px);
+}
+
+.technologyBox:hover .technologyHeaderBox,
+.technologyBox:hover .technologyBodyBox {
+  color: var(--black);
+}
+
+img.technologysvg {
+  background-color: var(--one-diff-color);
+  border-radius: 3rem;
+  padding: 0.5em;
+}
+
+.technologyIconBox {
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+}
+
+.technologyHeaderBox {
+  color: var(--two-diff-color);
+  text-align: center;
+  margin-top: 2em;
+}
+
+.technologyBodyBox {
+  color: var(--two-diff-color);
+  text-align: center;
+}
+
+.lbltechnologyHeader {
+  font-size: 2em;
+}
+
+.lbltechnologyBody {
+  font-size: 1.2em;
+}
+
+@media only screen and (max-width: 999px) {
+  .technologyClone {
+    grid-template-columns: 1fr 1fr;
+  }
+  .TechnologySection {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Technology-header-para .lblTechnologyHeaderPara {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 690px) {
+  .technologyClone {
+    grid-template-columns: 1fr;
+  }
+
+  .TechnologySection {
+    height: fit-content;
+  }
+
+  .technologyHeader .lblTechnologyHeader {
+    font-size: 2em;
+  }
+
+  .Technology-header-para .lblTechnologyHeaderPara {
+    font-size: 12px;
+  }
+}

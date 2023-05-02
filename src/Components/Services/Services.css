@@ -1,0 +1,170 @@
+.ServicesSection {
+  position: relative;
+  padding: 0.5em 0;
+  width: 100%;
+  height: calc(100vh - 1vh);
+  /* background-color: var(--fourth-diff-color); */
+  background-image: url(../../Assets/Images/bg1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.containerService {
+  height: 100%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.Services-header {
+  width: 100%;
+  text-align: center;
+  padding: 5em 0 1em 0;
+}
+
+.Services-header-para {
+  width: 100%;
+  text-align: center;
+  padding: 2em 0;
+}
+
+.Services-header .lblServiceHeader {
+  color: var(--light-theme);
+  font-size: 4em;
+  font-family: var(--heading-font);
+  font-weight: bold;
+}
+
+.Services-header-para .lblServiceHeaderPara {
+  color: var(--light-theme);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.Services-body {
+  width: 100%;
+}
+
+.serviceBox {
+  background-color: var(--white);
+  padding: 1em;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+}
+
+.serviceBox:hover {
+  background-color: var(--light-theme);
+  transform: translateY(-10px);
+}
+
+.serviceIconBox {
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+}
+
+.serviceClone {
+  display: grid;
+  /* flex-direction: row; */
+  /* justify-content: flex-start; */
+  row-gap: 1em;
+  column-gap: 1em;
+  grid-template-columns: 1fr 1fr;
+}
+
+.serviceHeaderBox {
+  color: var(--black);
+  text-align: center;
+  margin-top: 2em;
+}
+
+.serviceBodyBox {
+  color: var(--black);
+  text-align: center;
+}
+
+.lblServiceHeader {
+  font-size: 2em;
+}
+
+.lblServiceBody {
+  font-size: 1.2em;
+}
+
+svg.svg-inline--fa.iconFrontend {
+  color: var(--black);
+  height: 4em !important;
+}
+
+.zigzagdiv {
+  width: 18em;
+  /* border: 0.4em solid #ff5757; */
+  padding: 0.5em;
+  margin: 2em;
+  border-style: solid;
+  border-width: 7px 7px 7px 7px;
+  border-color: #d79494;
+  background-color: #ffc6c6;
+  border-radius: 257px 118px 280px 143px;
+}
+
+@media only screen and (max-width: 768px) {
+  .Services-header-para .lblServiceHeaderPara {
+    font-size: 18px;
+  }
+  .ServicesSection {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .serviceClone {
+    grid-template-columns: 1fr;
+  }
+
+  .Services-header .lblServiceHeader {
+    font-size: 1.5em;
+  }
+  .ServicesSection {
+    height: fit-content;
+  }
+
+  .Services-header-para .lblServiceHeaderPara {
+    font-size: 12px;
+  }
+}
+
+/* 
+
+-----------------Continue color Animation-------------------------
+.serviceBox:hover {
+    background-color: var(--light-theme);
+    animation-name: backgroundColorPalette;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    transform: translateY(-10px);
+} 
+ @keyframes backgroundColorPalette {
+    0% {
+        box-shadow: 0px 0px 15px 10px #ee6055;
+    }
+
+    25% {
+        box-shadow: 0px 0px 15px 10px #60d394;
+    }
+
+    50% {
+        box-shadow: 0px 0px 15px 10px #aaf683;
+    }
+
+    75% {
+        box-shadow: 0px 0px 15px 10px #ffd97d;
+    }
+
+    100% {
+        box-shadow: 0px 0px 15px 10px #ff9b85;
+    }
+} */

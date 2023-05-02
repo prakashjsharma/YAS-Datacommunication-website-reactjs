@@ -1,0 +1,187 @@
+.AboutSection {
+  position: relative;
+  padding: 0.5em 0;
+  width: 100%;
+  height: calc(100vh - 0vh);
+  background-color: var(--black);
+}
+
+.AboutContainer {
+  height: 100%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.AboutHeaderContainer {
+  text-align: center;
+}
+
+.lblHeaderAbout {
+  color: var(--white);
+  font-size: 4em;
+  text-transform: uppercase;
+  font-family: var(--heading-font);
+}
+
+.AboutBodySection {
+  height: 70%;
+  padding: 7em 2em 2em 2em;
+}
+
+.AboutCloneBox {
+  display: grid;
+  /* flex-direction: row; */
+  /* justify-content: flex-start; */
+  row-gap: 1em;
+  column-gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.AboutBox {
+  background-color: var(--sixth-diff-color);
+  padding: 1em;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+}
+
+.AboutBox:hover {
+  transform: translateY(-10px);
+  transform: rotate(3deg);
+}
+
+.AboutBox:nth-child(1) {
+  background-color: var(--two-diff-color);
+}
+
+.AboutBox:nth-child(1):hover {
+  transform: none;
+  transform: none;
+}
+
+.AboutBox:nth-child(1) .AboutHeaderBox,
+.AboutBox:nth-child(1) .AboutBodyBox {
+  color: var(--sixth-diff-color);
+}
+
+.AboutIconBox {
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+}
+
+img.Aboutsvg {
+  background-color: var(--one-diff-color);
+  border-radius: 3rem;
+  padding: 0.5em;
+}
+
+.AboutHeaderBox {
+  color: var(--two-diff-color);
+  text-align: center;
+  padding: 2em;
+}
+
+.lblAboutHeader {
+  font-size: 2em;
+}
+
+.lblAboutHeader:nth-child(1) {
+  font-weight: bold;
+}
+
+.AboutBodyBox {
+  color: var(--two-diff-color);
+  text-align: center;
+}
+
+.lblAboutBody {
+  font-size: 1.2em;
+}
+
+.AboutParagraphSection {
+  text-align: justify;
+  padding: 3em 14em;
+}
+
+.lblAboutPara {
+  color: var(--white);
+  /* font-family: var(--heading-font); */
+  font-size: 2em;
+}
+
+@media only screen and (max-width: 1440px) {
+  .lblAboutHeader {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .AboutSection {
+    height: 100%;
+  }
+  .lblAboutBody {
+    font-size: 1em;
+  }
+
+  .AboutHeaderBox {
+    padding: 2em 0;
+  }
+
+  .AboutParagraphSection {
+    padding: 3em 3em;
+  }
+
+  .lblAboutPara {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .AboutCloneBox {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .lblHeaderAbout {
+    font-size: 3em;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .AboutHeaderContainer {
+    padding: 2em 0 0 0;
+  }
+
+  .AboutBodySection {
+    padding: 3em 2em 2em 2em;
+  }
+
+  .lblHeaderAbout {
+    font-size: 1.5em;
+  }
+
+  .lblAboutHeader {
+    font-size: 2em;
+  }
+  .AboutCloneBox {
+    grid-template-columns: 1fr;
+  }
+
+  .AboutParagraphSection {
+    padding: 3em 0em;
+  }
+
+  .lblAboutPara {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .lblAboutHeader {
+    font-size: 1.5em;
+  }
+
+  .lblAboutBody {
+    font-size: 0.8em;
+  }
+  .lblAboutPara {
+    font-size: 0.8em;
+  }
+}

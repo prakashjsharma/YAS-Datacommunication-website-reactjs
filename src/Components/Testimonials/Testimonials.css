@@ -1,0 +1,325 @@
+.TestimonialsSection {
+  position: relative;
+  padding: 0.5em 0;
+  width: 100%;
+  height: calc(100vh - 1vh);
+  background-color: var(--two-diff-color);
+}
+
+.containerTestimonials {
+  height: 100%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.testimonialsHeader {
+  width: 100%;
+  text-align: center;
+  padding: 2em 0 1em 0;
+}
+
+.testimonialsHeader .lbltestimonialsHeader {
+  color: var(--fifth-diff-color);
+  font-size: 4em;
+  font-family: var(--heading-font);
+  font-weight: bold;
+}
+
+.testimonialParaContainer {
+  text-align: center;
+}
+
+label.lbltestimonialPara {
+  font-size: 24px;
+}
+
+.TestimonialsMainBody {
+  position: relative;
+  display: flex;
+  height: 84.6%;
+}
+
+.testimonialsImage {
+  width: 50%;
+  display: grid;
+  padding: 6em;
+}
+
+.testimonialsDescription {
+  width: 50%;
+  padding: 6em;
+}
+
+.testimonialsdescriptionHolder {
+  background-color: var(--black);
+  /* background-image: linear-gradient(
+      to right,
+      rgba(30, 30, 30, 0.3),
+      rgba(30, 30, 30, 0.2)
+    ),
+    url(../../Assets/Images/YAS1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  height: 100%;
+  border-radius: 0.5rem;
+  padding: 0 2em;
+}
+
+.TesimonialNameContainer {
+  text-align: center;
+  padding: 3em 0;
+}
+
+label.lblTestimonialName {
+  font-size: 3em;
+  color: var(--third-diff-color);
+  font-family: var(--heading-font);
+}
+
+.testimonierdescriptionContainer {
+  padding: 4em 2em;
+  border-radius: 0.8rem;
+
+  /* background-image: url(../../Assets/Images/testimonialbg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.testimonierdescriptionContainer img {
+  position: relative;
+  width: 8em;
+  border-radius: 5rem;
+  padding: 1em;
+  background-color: var(--one-diff-color);
+  height: 8em;
+  top: -5em;
+  right: -10em;
+}
+
+.lblTestimonialDesc {
+  font-size: 18px;
+  color: var(--third-diff-color);
+}
+.lblTestimonialDesc::before {
+  content: url(../../Assets/Images/quote.png);
+  margin-left: -90px;
+  /* background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+.lblTestimonialDesc::after {
+  content: url(../../Assets/Images/quoteCopy.png);
+  position: absolute;
+  /* background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.testimonialsClone {
+  display: grid;
+  /* flex-direction: row; */
+  /* justify-content: flex-start; */
+  row-gap: 1em;
+  column-gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.testimonialsBox {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1em;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease 0s;
+  min-height: 10em;
+}
+
+.testimonialsBox.active {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 17px 6px var(--dark-theme);
+  cursor: pointer;
+  transform: rotate(3deg);
+}
+
+.testimonialsBox:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 17px 6px var(--dark-theme);
+  cursor: pointer;
+  transform: rotate(3deg);
+}
+
+.testimonialsBox:nth-child(1) {
+  /* background-image: url(../../Assets/Images/3.png); */
+  background-image: linear-gradient(
+      to right,
+      rgba(30, 30, 30, 0.3),
+      rgba(30, 30, 30, 0.2)
+    ),
+    url(../../Assets/Images/3.png);
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+}
+
+.testimonialsBox:nth-child(2) {
+  /* background-image: url(../../Assets/Images/1.jpg); */
+  background-image: linear-gradient(
+      to right,
+      rgba(30, 30, 30, 0.3),
+      rgba(30, 30, 30, 0.2)
+    ),
+    url(../../Assets/Images/1.jpg);
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.testimonialsBox:nth-child(3) {
+  /* background-image: url(../../Assets/Images/razi.png); */
+  background-image: linear-gradient(
+      to right,
+      rgba(30, 30, 30, 0.3),
+      rgba(30, 30, 30, 0.2)
+    ),
+    url(../../Assets/Images/razi.png);
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 2;
+}
+
+.testimonialsBox:nth-child(4) {
+  /* background-image: url(../../Assets/Images/4.jpg); */
+  background-image: linear-gradient(
+      to right,
+      rgba(30, 30, 30, 0.3),
+      rgba(30, 30, 30, 0.2)
+    ),
+    url(../../Assets/Images/4.jpg);
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.testimonialsBox:nth-child(5) {
+  /* background-image: url(../../Assets/Images/2.jpg); */
+  background-image: linear-gradient(
+      to right,
+      rgba(30, 30, 30, 0.3),
+      rgba(30, 30, 30, 0.2)
+    ),
+    url(../../Assets/Images/2.jpg);
+  grid-column: 2 / span 2;
+  grid-row: 3 / span 1;
+}
+
+.testimonialsImageBox {
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1440px) {
+  .TestimonialsMainBody {
+    height: 68.6%;
+    padding-top: 5em;
+  }
+  .testimonialsImage {
+    padding: 2em;
+  }
+  .testimonialsDescription {
+    padding: 2em;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .TestimonialsMainBody {
+    display: block;
+    padding-top: 0;
+  }
+
+  .testimonialsBox {
+    min-height: 5em;
+  }
+
+  .testimonialsImage {
+    width: -webkit-fill-available;
+    display: grid;
+    padding: 3em;
+  }
+
+  .testimonialsDescription {
+    width: -webkit-fill-available;
+    padding: 0em 3em;
+  }
+
+  .TestimonialsSection {
+    height: 100%;
+  }
+
+  .testimonialsdescriptionHolder {
+    padding: 0 2em 0.5em 2em;
+  }
+  .testimonierdescriptionContainer {
+    padding: 5em 2em;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .lblTestimonialDesc {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .containerTestimonials {
+    height: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  .testimonialsClone {
+    row-gap: 0.2em;
+    column-gap: 0.2em;
+  }
+  .TestimonialsSection {
+    height: 100%;
+  }
+  .testimonialsBox {
+    min-height: 2em;
+  }
+
+  .testimonialsHeader .lbltestimonialsHeader {
+    font-size: 2em;
+  }
+
+  label.lbltestimonialPara {
+    font-size: 13px;
+  }
+  label.lblTestimonialName {
+    font-size: 1em;
+  }
+
+  .testimonierdescriptionContainer {
+    padding: 2em 1em;
+  }
+  .lblTestimonialDesc {
+    font-size: 10px;
+  }
+
+  .testimonialsImage {
+    padding: 1em;
+  }
+
+  .testimonialsDescription {
+    padding: 0em 1em;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  label.lblTestimonialName {
+    font-size: 1.6em;
+  }
+  .testimonierdescriptionContainer img {
+    top: -3.9em;
+    right: -5.8em;
+    width: 5em;
+    height: 5em;
+  }
+}

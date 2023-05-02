@@ -1,0 +1,139 @@
+.CareersSection {
+  position: relative;
+  padding: 0.5em 0;
+  width: 100%;
+  height: calc(100vh - 1vh);
+  /* background-color: var(--fourth-diff-color); */
+  background-image: url(https://abstract-r3tr0.vercel.app/static/eaf9c08c35330c67bdfe41d0f9107f50/d9c19/bg3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.containerCareers {
+  height: 100%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.TestimonialSectionHolder {
+  display: flex;
+  height: 100%;
+}
+
+.CareersHeaderDiv {
+  color: var(--white);
+  width: 50%;
+  padding: 7em 0 0 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.lblCareerHeader {
+  font-size: 4em;
+  font-family: var(--heading-font);
+}
+
+.CareersBoxDiv {
+  color: var(--white);
+  width: 50%;
+  padding: 7em 0 0 0;
+}
+
+.CareersCloneBox {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 1em;
+  row-gap: 1em;
+}
+
+.CareersBoxes {
+  display: flex;
+  background-color: var(--transparent-color);
+  padding: 1em;
+}
+
+.descriptionSection {
+  width: 80%;
+}
+
+.lblCareerTechnology {
+  font-size: 1.5em;
+}
+
+.CareersBtnSection {
+  width: 20%;
+}
+
+.hrOrange {
+  width: 10em;
+  height: 0.3em;
+  background-color: var(--one-diff-color);
+  border: 1px solid var(--one-diff-color);
+  margin-block-start: 1em;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  overflow: hidden;
+  border-style: none;
+  border-width: 0;
+}
+.btnCareersApply {
+  width: 80%;
+  height: 3em;
+  background-color: var(--one-diff-color);
+  border: 1px solid var(--one-diff-color);
+  color: var(--white);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1440px) {
+  .lblCareerHeader {
+    font-size: 3em;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .TestimonialSectionHolder {
+    display: block;
+  }
+  .CareersHeaderDiv {
+    width: 100%;
+  }
+
+  .CareersBoxDiv {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .CareersSection {
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .CareersSection {
+    height: 100%;
+  }
+  .lblCareerHeader {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .descriptionSection {
+    width: 70%;
+  }
+
+  .CareersBtnSection {
+    width: 30%;
+  }
+
+  .hrOrange {
+    width: 7em;
+  }
+
+  .lblCareerTechnology {
+    font-size: 1em;
+  }
+}
